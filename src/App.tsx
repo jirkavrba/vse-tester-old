@@ -32,7 +32,7 @@ const App: React.FC = () => {
           <TesterSelection selected={questionSet} sets={sets} onSelect={select} />
         </div>
       </header>
-      <Tester questions={questionSet.questions} />
+      <Tester questions={questionSet.questions} title={questionSet.title} />
       <footer className="flex flex-row justify-between bg-black py-5 px-10">
         <span className="text-neutral-700 uppercase text-xs font-black">VŠE Tester</span>
         <a className="text-gray-500" href="https://github.com/jirkavrba/vse-tester" target="_blank">

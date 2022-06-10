@@ -3,10 +3,11 @@ import { FaArrowRight, FaRandom, FaUndo } from "react-icons/fa";
 import { Question, QuestionState } from "../types";
 
 export interface TesterProps {
+    title: string,
     questions: Array<Question>
 }
 
-const Tester: React.FC<TesterProps> = ({ questions }: TesterProps) => {
+const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     const [revealed, setRevealed] = useState<boolean>(false);
     const [index, setIndex] = useState<number>(0);
     const [states, setStates] = useState<Array<QuestionState>>([]);
@@ -15,6 +16,8 @@ const Tester: React.FC<TesterProps> = ({ questions }: TesterProps) => {
         setIndex(Math.floor(Math.random() * questions.length));
         setStates([...new Array(questions.length)].fill([QuestionState.Unanswered]));
         setRevealed(false);
+        
+        document.title = title;
     }, [questions]);
 
     const question = questions[index % questions.length];
@@ -23,7 +26,7 @@ const Tester: React.FC<TesterProps> = ({ questions }: TesterProps) => {
     const incorrect = states.filter(state => state === QuestionState.Incorrect).length;
     const percentage = Math.floor(correct * 100 / Math.max(1, correct + incorrect));
 
-    const selected = (correct: boolean): void => {
+    const select = (correct: boolean): void => {
         if (revealed) {
             return;
         }
@@ -74,7 +77,7 @@ const Tester: React.FC<TesterProps> = ({ questions }: TesterProps) => {
                             : "bg-neutral-900 border-neutral-700 text-neutral-500";
 
                         return (
-                            <button onClick={() => selected(question.correct)} key={i} className={`text-left px-10 py-8 mb-5 rounded-xl border-2 transition font-black ${revealed ? classes : 'border-neutral-800 bg-neutral-800 text-neutral-300 hover:border-neutral-600 hover:shadow-lg'}`}>
+                            <button onClick={() => select(question.correct)} key={i} className={`text-left px-10 py-8 mb-5 rounded-xl border-2 transition font-black ${revealed ? classes : 'border-neutral-800 bg-neutral-800 text-neutral-300 hover:border-neutral-600 hover:shadow-lg'}`}>
                                 {question.text}
                             </button>
                         )
