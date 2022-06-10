@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
+import Tester from './components/Tester';
 import TesterSelection from './components/TesterSelection';
 import sets from "./sets"
 import { QuestionSet } from './types';
@@ -31,8 +32,7 @@ const App: React.FC = () => {
           <TesterSelection selected={questionSet} sets={sets} onSelect={select} />
         </div>
       </header>
-      <body className="flex-grow p-10">
-      </body>
+      <Tester questions={questionSet.questions} />
       <footer className="flex flex-row justify-between bg-gray-50 py-5 px-10">
         <span className="text-gray-400 uppercase text-xs font-black">VŠE Tester</span>
         <a className="text-gray-500" href="https://github.com/jirkavrba/vse-tester" target="_blank">
