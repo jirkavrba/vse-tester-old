@@ -3,16 +3,15 @@ import { FaChevronDown } from "react-icons/fa";
 
 export interface TesterSelectionProps {
     subjects: Array<string>,
+    selected?: string | undefined,
     onSelect: (selected: string) => void
 }
 
-const TesterSelection: React.FC<TesterSelectionProps> = ({ subjects, onSelect }: TesterSelectionProps) => {
-    const [selected, setSelected] = useState<string>(subjects[0]);
+const TesterSelection: React.FC<TesterSelectionProps> = ({ subjects, selected, onSelect }: TesterSelectionProps) => {
     const [expanded, setExpanded] = useState<boolean>(false);
 
     const select = (subject: string): void => {
         onSelect(subject);
-        setSelected(subject);
         setExpanded(false);
     }
 
@@ -20,7 +19,7 @@ const TesterSelection: React.FC<TesterSelectionProps> = ({ subjects, onSelect }:
         <div className="absolute p-5 rounded-xl top-0 right-0 transition" onMouseLeave={() => setExpanded(false)}>
             <button onMouseEnter={() => setExpanded(true)} onClick={() => setExpanded(expanded => !expanded)} className={`cursor-pointer px-5 py-3 bg-white border-2 rounded-lg uppercase text-gray-500 tracking-widest font-bold transition flex flex-row items-center ${expanded ? 'border-gray-400 shadow-lg' : 'border-gray-200 hover:border-gray-400'}`}>
                 {selected}
-                <FaChevronDown className={`ml-3 transition transform ${expanded ? 'rotate-180' : 'rotate-0'}`}/>
+                <FaChevronDown className={`ml-3 transition transform ${expanded ? 'rotate-180' : 'rotate-0'}`} />
             </button>
             <div className={`${expanded ? 'visible' : 'invisible'}`}>
                 {

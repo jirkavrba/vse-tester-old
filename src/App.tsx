@@ -23,7 +23,7 @@ const App: React.FC = () => {
       <header className="flex flex-col p-10 bg-gray-100">
         <h1 className="text-3xl font-bold text-gray-600">{questionSet.title}</h1>
         <p className="text-sm text-gray-400 uppercase font-bold tracking-widest mt-3">Tester obsahuje {questionSet.questions.length} otázek</p>
-        <TesterSelection subjects={sets.map(set => set.subject)} onSelect={select}/>
+        <TesterSelection selected={questionSet.subject} subjects={sets.map(set => set.subject)} onSelect={select}/>
       </header>
     </>
   );
