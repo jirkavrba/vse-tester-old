@@ -9,6 +9,6 @@ export interface Question {
 }
 
 export interface QuestionSet {
-    text: string,
+    title: string,
     questions: Array<Question>
 }
