@@ -13,3 +13,9 @@ export interface QuestionSet {
     subject: string,
     questions: Array<Question>
 }
+
+export enum QuestionState {
+    Unanswered,
+    Correct,
+    Incorrect
+}

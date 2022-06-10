@@ -22,10 +22,10 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="flex flex-row p-10 bg-gray-100 items-start">
+      <header className="flex flex-row p-10 bg-black items-start">
         <div className="flex flex-col">
-          <h1 className="text-3xl font-bold text-gray-600">{questionSet.title}</h1>
-          <p className="text-sm text-gray-400 uppercase font-bold tracking-widest mt-3">Tester obsahuje {questionSet.questions.length} otázek</p>
+          <h1 className="text-3xl font-bold text-neutral-200">{questionSet.title}</h1>
+          <p className="text-sm text-neutral-500 uppercase font-bold tracking-widest mt-3">Tester obsahuje {questionSet.questions.length} otázek</p>
         </div>
 
         <div className="flex-grow">
@@ -33,8 +33,8 @@ const App: React.FC = () => {
         </div>
       </header>
       <Tester questions={questionSet.questions} />
-      <footer className="flex flex-row justify-between bg-gray-50 py-5 px-10">
-        <span className="text-gray-400 uppercase text-xs font-black">VŠE Tester</span>
+      <footer className="flex flex-row justify-between bg-black py-5 px-10">
+        <span className="text-neutral-700 uppercase text-xs font-black">VŠE Tester</span>
         <a className="text-gray-500" href="https://github.com/jirkavrba/vse-tester" target="_blank">
           <FaGithub />
         </a>
