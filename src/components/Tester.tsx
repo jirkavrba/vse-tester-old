@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaArrowRight, FaRandom } from "react-icons/fa";
+import { FaArrowRight, FaRandom, FaUndo } from "react-icons/fa";
 import { Question, QuestionState } from "../types";
 
 export interface TesterProps {
@@ -45,7 +45,11 @@ const Tester: React.FC<TesterProps> = ({ questions }: TesterProps) => {
     }
 
     const randomQuestion = () => {
-        setIndex(Math.floor(Math.random() * questions.length));
+        const remaining = states.every(state => state != QuestionState.Unanswered)
+            ? states.map((_, i) => i)
+            : states.map((state, i) => state === QuestionState.Unanswered ? i : null).filter(state => state !== null)
+
+        setIndex(remaining[Math.floor(Math.random() * remaining.length)] ?? 0);
         setRevealed(false);
     }
 
@@ -54,9 +58,14 @@ const Tester: React.FC<TesterProps> = ({ questions }: TesterProps) => {
         setRevealed(false);
     }
 
+    const reset = () => {
+        setIndex(Math.floor(Math.random() * questions.length));
+        setStates([...new Array(questions.length)].fill(QuestionState.Unanswered));
+    }
+
     return (
         <div className="flex flex-grow p-10 flex-row items-stretch bg-neutral-900">
-            <div className="w-3/4">
+            <div className="w-1/2 xl:w-3/5 2xl:w-3/4">
                 <h1 className="text-white font-bold text-3xl">{question.text}</h1>
                 <div className="flex flex-col mt-10">
                     {question.answers.map((question, i) => {
@@ -72,20 +81,20 @@ const Tester: React.FC<TesterProps> = ({ questions }: TesterProps) => {
                     })}
                 </div>
             </div>
-            <aside className="w-1/4 flex flex-col p-5 ml-5 border-2 border-neutral-700 bg-neutral-800 rounded-lg shadow-lg">
+            <aside className="w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-5 border-2 border-neutral-700 bg-neutral-800 rounded-lg shadow-lg">
                 <div className="flex flex-row items-center justify-between bg-neutral-800 rounded-lg p-5 font-bold">
                     <h1 className="text-3xl text-white flex-grow">{percentage}&nbsp;%</h1>
                     <span className="text-green-500">{correct} správně</span>
                     <span className="text-neutral-600 mx-3">/</span>
                     <span className="text-red-500">{incorrect} špatně</span>
                 </div>
-                <button className={`flex flex-row items-center justify-center mt-5 w-full font-bold uppercase tracking-wide text-sm py-5 rounded-lg transition ${revealed ? 'bg-neutral-700 text-white hover:bg-neutral-600' : 'bg-neutral-800 text-neutral-700'}`} disabled={!revealed} onClick={randomQuestion}>
-                    <FaRandom className="mr-5"/>
-                    Náhodná otázka
-                </button>
                 <button className={`flex flex-row items-center justify-center mt-5 w-full font-bold uppercase tracking-wide text-sm py-5 rounded-lg transition ${revealed ? 'bg-neutral-700 text-white hover:bg-neutral-600' : 'bg-neutral-800 text-neutral-700'}`} disabled={!revealed} onClick={nextQuestion}>
-                    <FaArrowRight className="mr-5"/>
+                    <FaArrowRight className="mr-5" />
                     Další otázka
+                </button>
+                <button className={`flex flex-row items-center justify-center mt-5 w-full font-bold uppercase tracking-wide text-sm py-5 rounded-lg transition ${revealed ? 'bg-neutral-700 text-white hover:bg-neutral-600' : 'bg-neutral-800 text-neutral-700'}`} disabled={!revealed} onClick={randomQuestion}>
+                    <FaRandom className="mr-5" />
+                    Náhodná otázka
                 </button>
                 <div className="flex-grow flex flex-row flex-wrap items-start content-start justify-start mt-5">
                     {
@@ -96,12 +105,16 @@ const Tester: React.FC<TesterProps> = ({ questions }: TesterProps) => {
                                 [QuestionState.Incorrect]: "bg-red-700 text-white hover:bg-red-500 ring-red-300",
                             }
 
-                            return <div key={i} className={`font-bold text-xs flex flex-col items-center justify-center transition cursor-pointer rounded font-mono py-1 px-2 m-1 ${i === index ? 'ring-2' : ''} ${classes[state] }`} onClick={() => directQuestion(i)}>
+                            return <div key={i} className={`font-bold text-xs flex flex-col items-center justify-center transition cursor-pointer rounded font-mono py-1 px-2 m-1 ${i === index ? 'ring-2' : ''} ${classes[state]}`} onClick={() => directQuestion(i)}>
                                 {i.toString().padStart(3, "0")}
                             </div>
                         })
-                    } 
-                </div> 
+                    }
+                </div>
+                <button onClick={reset} className="flex flex-row items-center justify-center text-neutral-700 uppercase tracking-widest text-sm font-bold transition hover:text-neutral-500">
+                    <FaUndo className="mr-2"/> 
+                    Reset
+                </button>
             </aside>
         </div>
     );
