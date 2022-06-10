@@ -12,10 +12,20 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     const [index, setIndex] = useState<number>(0);
     const [states, setStates] = useState<Array<QuestionState>>([]);
 
+    const key = `key_${title.replace(/[^a-zA-Z0-9]+/, '-')}`;
+
     useEffect(() => {
+        const defaultStates = [...new Array(questions.length)].fill([QuestionState.Unanswered]);
+
         setIndex(Math.floor(Math.random() * questions.length));
-        setStates([...new Array(questions.length)].fill([QuestionState.Unanswered]));
         setRevealed(false);
+        setStates(defaultStates);
+
+        const stored = window.localStorage.getItem(key);
+
+        if (stored !== null) {
+            setStates(JSON.parse(stored));
+        }
 
         document.title = title;
     }, [questions]);
@@ -37,6 +47,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
             const copy = [...states];
 
             copy.splice(index, 1, current);
+            window.localStorage.setItem(key, JSON.stringify(copy));
 
             return copy;
         });
@@ -62,8 +73,11 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     }
 
     const reset = () => {
+        setRevealed(false);
         setIndex(Math.floor(Math.random() * questions.length));
         setStates([...new Array(questions.length)].fill(QuestionState.Unanswered));
+
+        window.localStorage.removeItem(key);
     }
 
     return (
