@@ -16,7 +16,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
         setIndex(Math.floor(Math.random() * questions.length));
         setStates([...new Array(questions.length)].fill([QuestionState.Unanswered]));
         setRevealed(false);
-        
+
         document.title = title;
     }, [questions]);
 
@@ -48,9 +48,9 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     }
 
     const randomQuestion = () => {
-        const remaining = states.every(state => state != QuestionState.Unanswered)
+        const remaining = states.every(state => state !== QuestionState.Unanswered)
             ? states.map((_, i) => i)
-            : states.map((state, i) => state === QuestionState.Unanswered ? i : null).filter(state => state !== null)
+            : states.map((state, i) => state === QuestionState.Unanswered ? i : null).filter(state => state !== null);
 
         setIndex(remaining[Math.floor(Math.random() * remaining.length)] ?? 0);
         setRevealed(false);
@@ -115,7 +115,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
                     }
                 </div>
                 <button onClick={reset} className="flex flex-row items-center justify-center text-neutral-700 uppercase tracking-widest text-sm font-bold transition hover:text-neutral-500">
-                    <FaUndo className="mr-2"/> 
+                    <FaUndo className="mr-2" />
                     Reset
                 </button>
             </aside>
