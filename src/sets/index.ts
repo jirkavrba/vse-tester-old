@@ -6,15 +6,18 @@ import questions4st204 from "./4st204-statistika-pro-informatiky.json";
 
 const sets: Array<QuestionSet> = [
     {
-        title: "3SG201 - Strategická analýza pro informatiky",
+        title: "Strategická analýza pro informatiky",
+        subject: "3SG201",
         questions: questions3sg201
     },
     {
-        title: "4SA310 - IT Governance",
+        title: "IT Governance",
+        subject: "4SA310",
         questions: questions4sa310
     },
     {
-        title: "4ST204 - Statistika pro informatiky",
+        title: "Statistika pro informatiky",
+        subject: "4ST204",
         questions: questions4st204
     }
 ];
