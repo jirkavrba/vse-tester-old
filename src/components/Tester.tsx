@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { FaArrowRight, FaRandom, FaUndo } from "react-icons/fa";
 import seedrandom from "seedrandom";
 import { Question, QuestionState } from "../types";
+import Button from "./Button";
 
 export interface TesterProps {
     title: string,
@@ -114,14 +115,14 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
                     <span className="text-neutral-600 mx-3">/</span>
                     <span className="text-red-500">{incorrect} špatně</span>
                 </div>
-                <button className={`flex flex-row items-center justify-center mt-5 w-full font-bold uppercase tracking-wide text-sm py-5 rounded-lg transition ${revealed ? 'bg-neutral-700 text-white hover:bg-neutral-600' : 'bg-neutral-800 text-neutral-700'}`} disabled={!revealed} onClick={nextQuestion}>
+                <Button disabled={!revealed} onClick={nextQuestion}>
                     <FaArrowRight className="mr-5" />
                     Další otázka
-                </button>
-                <button className={`flex flex-row items-center justify-center mt-5 w-full font-bold uppercase tracking-wide text-sm py-5 rounded-lg transition ${revealed ? 'bg-neutral-700 text-white hover:bg-neutral-600' : 'bg-neutral-800 text-neutral-700'}`} disabled={!revealed} onClick={randomQuestion}>
+                </Button>
+                <Button disabled={!revealed} onClick={randomQuestion}>
                     <FaRandom className="mr-5" />
                     Náhodná otázka
-                </button>
+                </Button>
                 <div className="flex-grow flex flex-row flex-wrap items-start content-start justify-start mt-5">
                     {
                         states.map((state, i) => {
