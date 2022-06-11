@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { FaArrowRight, FaRandom, FaUndo } from "react-icons/fa";
 import seedrandom from "seedrandom";
 import { Question, QuestionState } from "../types";
+import Answer from "./Answer";
 import Button from "./Button";
 import Progress from "./Progress";
 import QuestionsOverview from "./QuestionsOverview";
@@ -99,17 +100,8 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
             <div className="w-1/2 xl:w-3/5 2xl:w-3/4">
                 <h1 className="text-white font-bold text-3xl">{question.text}</h1>
                 <div className="flex flex-col mt-10">
-                    {answers.map((question, i) => {
-                        const classes = question.correct
-                            ? "bg-green-900 border-green-300 text-white"
-                            : "bg-neutral-900 border-neutral-700 text-neutral-500";
-
-                        return (
-                            <button onClick={() => select(question.correct)} key={i} className={`text-left px-10 py-8 mb-5 rounded-xl border-2 transition font-black ${revealed ? classes : 'border-neutral-800 bg-neutral-800 text-neutral-300 hover:border-neutral-600 hover:shadow-lg'}`}>
-                                {question.text}
-                            </button>
-                        )
-                    })}
+                    {answers.map((answer, i) => 
+                        <Answer key={i} text={answer.text} correct={answer.correct} revealed={revealed} onSelect={select} />)}
                 </div>
             </div>
             <aside className="w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-5 bg-neutral-800 rounded-xl shadow-lg">
