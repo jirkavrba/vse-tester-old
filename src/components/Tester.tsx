@@ -67,7 +67,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     const randomQuestion = () => {
         const remaining = states.every(state => state !== QuestionState.Unanswered)
             ? states.map((_, i) => i)
-            : states.map((state, i) => state === QuestionState.Unanswered ? i : null).filter(state => state !== null);
+            : states.map((state, i) => state !== QuestionState.Correct ? i : null).filter(state => state !== null);
 
         setIndex(remaining[Math.floor(Math.random() * remaining.length)] ?? 0);
         setRevealed(false);
