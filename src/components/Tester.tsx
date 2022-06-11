@@ -22,6 +22,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
         setIndex(Math.floor(Math.random() * questions.length));
         setRevealed(false);
         setStates(defaultStates);
+        setNonce(Math.random());
 
         const stored = window.localStorage.getItem(key);
 
