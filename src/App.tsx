@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
+import Header from './components/Header';
 import Tester from './components/Tester';
 import TesterSelection from './components/TesterSelection';
 import sets from "./sets"
@@ -22,16 +23,9 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="flex flex-row p-10 bg-black items-start">
-        <div className="flex flex-col">
-          <h1 className="text-3xl font-bold text-neutral-200">{questionSet.title}</h1>
-          <p className="text-sm text-neutral-500 uppercase font-bold tracking-widest mt-3">Tester obsahuje {questionSet.questions.length} otázek</p>
-        </div>
-
-        <div className="flex-grow">
-          <TesterSelection selected={questionSet} sets={sets} onSelect={select} />
-        </div>
-      </header>
+      <Header title={questionSet.title} questionsCount={questionSet.questions.length}>
+        <TesterSelection selected={questionSet} sets={sets} onSelect={select} />
+      </Header>
       <Tester questions={questionSet.questions} title={questionSet.title} />
       <footer className="flex flex-row justify-between bg-black py-5 px-10">
         <span className="text-neutral-700 uppercase text-xs font-black">VŠE Tester</span>
