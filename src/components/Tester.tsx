@@ -3,6 +3,7 @@ import { FaArrowRight, FaRandom, FaUndo } from "react-icons/fa";
 import seedrandom from "seedrandom";
 import { Question, QuestionState } from "../types";
 import Button from "./Button";
+import Progress from "./Progress";
 
 export interface TesterProps {
     title: string,
@@ -38,7 +39,6 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
 
     const correct = states.filter(state => state === QuestionState.Correct).length;
     const incorrect = states.filter(state => state === QuestionState.Incorrect).length;
-    const percentage = Math.floor(correct * 100 / Math.max(1, correct + incorrect));
 
     const select = (correct: boolean): void => {
         if (revealed) {
@@ -108,13 +108,8 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
                     })}
                 </div>
             </div>
-            <aside className="w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-5 border-2 border-neutral-700 bg-neutral-800 rounded-lg shadow-lg">
-                <div className="flex flex-row items-center justify-between bg-neutral-800 rounded-lg p-5 font-bold">
-                    <h1 className="text-3xl text-white flex-grow">{percentage}&nbsp;%</h1>
-                    <span className="text-green-500">{correct} správně</span>
-                    <span className="text-neutral-600 mx-3">/</span>
-                    <span className="text-red-500">{incorrect} špatně</span>
-                </div>
+            <aside className="w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-5 bg-neutral-800 rounded-xl shadow-lg">
+                <Progress correct={correct} incorrect={incorrect} />
                 <Button disabled={!revealed} onClick={nextQuestion}>
                     <FaArrowRight className="mr-5" />
                     Další otázka
