@@ -1,4 +1,4 @@
-import { Question, QuestionState } from "../types";
+import { QuestionState } from "../types";
 
 export interface QuestionsOverviewProps {
     questions: Array<QuestionState>,

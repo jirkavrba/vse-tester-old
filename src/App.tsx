@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { FaGithub } from 'react-icons/fa';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Tester from './components/Tester';

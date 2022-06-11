@@ -34,7 +34,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
         }
 
         document.title = title;
-    }, [questions]);
+    }, [questions, title, key]);
 
     const question = questions[index % questions.length];
 
@@ -91,7 +91,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     const answers = useMemo(() => {
             const random = seedrandom(nonce.toString());
             return question.answers.sort((_a, _b) => 0.5 - random());
-        }, [nonce]
+        }, [nonce, question.answers]
     );
 
     return (
