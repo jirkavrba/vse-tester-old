@@ -100,8 +100,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
             <div className="w-1/2 xl:w-3/5 2xl:w-3/4">
                 <h1 className="text-white font-bold text-3xl">{question.text}</h1>
                 <div className="flex flex-col mt-10">
-                    {answers.map((answer, i) => 
-                        <Answer key={i} text={answer.text} correct={answer.correct} revealed={revealed} onSelect={select} />)}
+                    {answers.map((answer, i) => <Answer key={i} text={answer.text} correct={answer.correct} revealed={revealed} onSelect={select} />)}
                 </div>
             </div>
             <aside className="w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-5 bg-neutral-800 rounded-xl shadow-lg">
