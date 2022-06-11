@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { Dispatch, useContext, useEffect, useState } from 'react';
+import Button from './components/Button';
+import DarkModeSwitch from './components/DarkModeSwitch';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Tester from './components/Tester';
@@ -6,12 +8,34 @@ import TesterSelection from './components/TesterSelection';
 import sets from "./sets"
 import { QuestionSet } from './types';
 
+export interface AppContextState {
+  darkmode: boolean,
+  setDarkmode: (previous: boolean) => void
+}
+
+export const AppContext = React.createContext<AppContextState>({
+   darkmode: true,
+   setDarkmode: (previous) => previous
+});
+
 const App: React.FC = () => {
   const [questionSet, setQuestionSet] = useState<QuestionSet>(sets[0]);
+  const [darkmode, setDarkmode] = useState<boolean>(window.localStorage.getItem("theme") !== "light-mode");
 
   const select = (subject: QuestionSet) => {
     window.localStorage.setItem("current-set", subject.subject);
     setQuestionSet(subject);
+  }
+
+  const toggleDarkMode = () => {
+    setDarkmode(previous => {
+      const next = !previous;
+      const mode = next ? "dark-mode" : "light-mode";
+
+      window.localStorage.setItem("theme", mode);
+
+      return next;
+    });
   }
 
   useEffect(() => {
@@ -23,11 +47,14 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header title={questionSet.title} questionsCount={questionSet.questions.length}>
-        <TesterSelection selected={questionSet} sets={sets} onSelect={select} />
-      </Header>
-      <Tester questions={questionSet.questions} title={questionSet.title} />
-      <Footer/>
+      <AppContext.Provider value={{darkmode, setDarkmode}}>
+        <Header title={questionSet.title} questionsCount={questionSet.questions.length}>
+          <TesterSelection className="flex-grow" selected={questionSet} sets={sets} onSelect={select} />
+          <DarkModeSwitch dark={darkmode} toggle={toggleDarkMode}/>
+        </Header>
+        <Tester questions={questionSet.questions} title={questionSet.title} />
+        <Footer />
+      </AppContext.Provider>
     </div>
   );
 }

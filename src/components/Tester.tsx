@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { FaArrowRight, FaRandom, FaUndo } from "react-icons/fa";
 import seedrandom from "seedrandom";
+import { AppContext } from "../App";
 import { Question, QuestionState } from "../types";
 import Answer from "./Answer";
 import Button from "./Button";
@@ -17,6 +18,8 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     const [index, setIndex] = useState<number>(0);
     const [nonce, setNonce] = useState<number>(Math.random());
     const [states, setStates] = useState<Array<QuestionState>>([]);
+
+    const {darkmode} = useContext(AppContext);
 
     const key = `key_${title.replace(/[^a-zA-Z0-9]+/, '-')}`;
 
@@ -96,20 +99,20 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     );
 
     return (
-        <div className="flex flex-grow p-10 flex-row items-stretch bg-neutral-900">
+        <div className={`flex flex-grow p-10 flex-row items-stretch ${darkmode ? 'bg-neutral-900' : 'bg-white'}`}>
             <div className="w-1/2 xl:w-3/5 2xl:w-3/4">
-                <h1 className="text-white font-bold text-3xl">{question.text}</h1>
+                <h1 className={`${darkmode ? 'text-white' : 'text-black'} font-bold text-3xl`}>{question.text}</h1>
                 <div className="flex flex-col mt-10">
                     {answers.map((answer, i) => <Answer key={i} text={answer.text} correct={answer.correct} revealed={revealed} onSelect={select} />)}
                 </div>
             </div>
-            <aside className="w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-5 bg-neutral-800 rounded-xl shadow-lg">
+            <aside className={`${darkmode ? 'bg-neutral-800' : 'bg-gray-200'} w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-5 rounded-xl`}>
                 <Progress correct={correct} incorrect={incorrect} />
-                <Button disabled={!revealed} onClick={nextQuestion}>
+                <Button disabled={!revealed} onClick={nextQuestion} className="mt-3 w-full">
                     <FaArrowRight className="mr-5" />
                     Další otázka
                 </Button>
-                <Button disabled={!revealed} onClick={randomQuestion}>
+                <Button disabled={!revealed} onClick={randomQuestion} className="mt-3 w-full">
                     <FaRandom className="mr-5" />
                     Náhodná otázka
                 </Button>
