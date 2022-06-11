@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { FaArrowRight, FaRandom, FaUndo } from "react-icons/fa";
+import seedrandom from "seedrandom";
 import { Question, QuestionState } from "../types";
 
 export interface TesterProps {
@@ -10,6 +11,7 @@ export interface TesterProps {
 const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     const [revealed, setRevealed] = useState<boolean>(false);
     const [index, setIndex] = useState<number>(0);
+    const [nonce, setNonce] = useState<number>(Math.random());
     const [states, setStates] = useState<Array<QuestionState>>([]);
 
     const key = `key_${title.replace(/[^a-zA-Z0-9]+/, '-')}`;
@@ -56,6 +58,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     const nextQuestion = () => {
         setIndex(index => (index + 1) % questions.length);
         setRevealed(false);
+        setNonce(Math.random());
     }
 
     const randomQuestion = () => {
@@ -65,11 +68,13 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
 
         setIndex(remaining[Math.floor(Math.random() * remaining.length)] ?? 0);
         setRevealed(false);
+        setNonce(Math.random());
     }
 
     const directQuestion = (index: number) => {
         setIndex(index);
         setRevealed(false);
+        setNonce(Math.random());
     }
 
     const reset = () => {
@@ -80,12 +85,15 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
         window.localStorage.removeItem(key);
     }
 
+    const random = seedrandom(nonce.toString());
+    const answers = useMemo(() => question.answers.sort((_a, _b) => 0.5 - random()), [nonce]);
+
     return (
         <div className="flex flex-grow p-10 flex-row items-stretch bg-neutral-900">
             <div className="w-1/2 xl:w-3/5 2xl:w-3/4">
                 <h1 className="text-white font-bold text-3xl">{question.text}</h1>
                 <div className="flex flex-col mt-10">
-                    {question.answers.map((question, i) => {
+                    {answers.map((question, i) => {
                         const classes = question.correct
                             ? "bg-green-900 border-green-300 text-white"
                             : "bg-neutral-900 border-neutral-700 text-neutral-500";
