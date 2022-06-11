@@ -4,6 +4,7 @@ import seedrandom from "seedrandom";
 import { Question, QuestionState } from "../types";
 import Button from "./Button";
 import Progress from "./Progress";
+import QuestionsOverview from "./QuestionsOverview";
 
 export interface TesterProps {
     title: string,
@@ -87,8 +88,11 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
         window.localStorage.removeItem(key);
     }
 
-    const random = seedrandom(nonce.toString());
-    const answers = useMemo(() => question.answers.sort((_a, _b) => 0.5 - random()), [nonce]);
+    const answers = useMemo(() => {
+            const random = seedrandom(nonce.toString());
+            return question.answers.sort((_a, _b) => 0.5 - random());
+        }, [nonce]
+    );
 
     return (
         <div className="flex flex-grow p-10 flex-row items-stretch bg-neutral-900">
@@ -118,21 +122,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
                     <FaRandom className="mr-5" />
                     Náhodná otázka
                 </Button>
-                <div className="flex-grow flex flex-row flex-wrap items-start content-start justify-start mt-5">
-                    {
-                        states.map((state, i) => {
-                            const classes = {
-                                [QuestionState.Unanswered]: "bg-neutral-700 hover:bg-neutral-500 text-neutral-400 ring-neutral-500",
-                                [QuestionState.Correct]: "bg-green-700 text-white hover:bg-green-400 ring-green-300",
-                                [QuestionState.Incorrect]: "bg-red-700 text-white hover:bg-red-500 ring-red-300",
-                            }
-
-                            return <div key={i} className={`font-bold text-xs flex flex-col items-center justify-center transition cursor-pointer rounded font-mono py-1 px-2 m-1 ${i === index ? 'ring-2' : ''} ${classes[state]}`} onClick={() => directQuestion(i)}>
-                                {i.toString().padStart(3, "0")}
-                            </div>
-                        })
-                    }
-                </div>
+                <QuestionsOverview questions={states} selected={index} onSelect={directQuestion} />
                 <button onClick={reset} className="flex flex-row items-center justify-center text-neutral-700 uppercase tracking-widest text-sm font-bold transition hover:text-neutral-500">
                     <FaUndo className="mr-2" />
                     Reset
