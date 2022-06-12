@@ -1,5 +1,26 @@
 [
     {
+        "text": "V matici SWOT je strategie diversifikace charakteristická tím, že:",
+        "answers": [
+            {
+                "text": "využívá silných stránek na konfrontaci s hrozbami",
+                "correct": true
+            },
+            {
+                "text": "se zaměřuje na přežití a zachování základního fungování podniku",
+                "correct": false
+            },
+            {
+                "text": "vyžaduje získání dalších zdrojů pro využití příležitosti\n",
+                "correct": false
+            },
+            {
+                "text": "se zaměřuje na využití příležitosti pomocí silných stránek k růstu",
+                "correct": false
+            }
+        ]
+    },
+    {
         "text": "Jak může být dosažena hodnotná konkurenční pozice?",
         "answers": [
             {
