@@ -19,8 +19,8 @@ interface QuestionSquareProps {
 const QuestionSquare: React.FC<QuestionSquareProps> = ({ state, index, active, onSelect }: QuestionSquareProps) => {
     const {darkmode} = useContext(AppContext);
     const classes = {
-        [QuestionState.Correct]: "bg-green-500 hover:bg-green-400 ring-green-300",
-        [QuestionState.Incorrect]: "bg-red-500 hover:bg-red-400 ring-red-300",
+        [QuestionState.Correct]: `bg-green-500 hover:bg-green-400 ${darkmode ? "ring-green-300" : "ring-green-700"}`,
+        [QuestionState.Incorrect]: `bg-red-500 hover:bg-red-400 ${darkmode ? "ring-red-300" : "ring-red-800"}`,
         [QuestionState.Unanswered]: darkmode 
             ? "bg-neutral-700 hover:bg-neutral-500 text-neutral-400 ring-neutral-500" 
             : "bg-gray-300 hover:bg-gray-500 ring-neutral-600",

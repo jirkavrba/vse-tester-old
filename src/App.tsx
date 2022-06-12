@@ -1,5 +1,4 @@
-import React, { Dispatch, useContext, useEffect, useState } from 'react';
-import Button from './components/Button';
+import React, { useEffect, useState } from 'react';
 import DarkModeSwitch from './components/DarkModeSwitch';
 import Footer from './components/Footer';
 import Header from './components/Header';
