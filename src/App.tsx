@@ -51,7 +51,7 @@ const App: React.FC = () => {
           <TesterSelection className="lg:flex-grow" selected={questionSet} sets={sets} onSelect={select} />
           <DarkModeSwitch dark={darkmode} toggle={toggleDarkMode}/>
         </Header>
-        <Tester questions={questionSet.questions} title={questionSet.title} />
+        <Tester {...questionSet} />
         <Footer />
       </AppContext.Provider>
     </div>

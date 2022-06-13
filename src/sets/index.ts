@@ -9,22 +9,26 @@ const sets: Array<QuestionSet> = [
     {
         title: "Strategická analýza pro informatiky",
         subject: "3SG201",
-        questions: questions3sg201
+        questions: questions3sg201,
+        multichoice: false
     },
     {
         title: "IT Governance",
         subject: "4SA310",
-        questions: questions4sa310
+        questions: questions4sa310,
+        multichoice: false
     },
     {
         title: "Statistika pro informatiky",
         subject: "4ST204",
-        questions: questions4st204
+        questions: questions4st204,
+        multichoice: false
     },
     {
         title: "Softwarové inženýrství",
         subject: "4IT115",
-        questions: questions4it115
+        questions: questions4it115,
+        multichoice: true
     }
 ];
 

@@ -11,7 +11,8 @@ export interface Question {
 export interface QuestionSet {
     title: string,
     subject: string,
-    questions: Array<Question>
+    questions: Array<Question>,
+    multichoice: boolean
 }
 
 export enum QuestionState {
