@@ -12,10 +12,10 @@ const Progress: React.FC<ProgressProps> = ({ correct, incorrect }: ProgressProps
 
     return (
         <div className={`${darkmode ? "bg-neutral-900" : "bg-white"} flex flex-row items-center justify-between rounded-lg p-5 font-bold`}>
-            <h1 className={`${darkmode ? "text-white" : "text-black"} text-3xl flex-grow`}>{percentage}&nbsp;%</h1>
-            <span className="text-green-500">{correct} správně</span>
-            <span className="text-neutral-600 mx-3">/</span>
-            <span className="text-red-500">{incorrect} špatně</span>
+            <h1 className={`${darkmode ? "text-white" : "text-black"} text-xl lg:text-3xl flex-grow`}>{percentage}&nbsp;%</h1>
+            <span className="text-green-500 text-sm lg:text-lg">{correct} správně</span>
+            <span className="text-neutral-600 mx-2 lg:mx-3 text-sm lg:text-lg">/</span>
+            <span className="text-red-500 text-sm lg:text-lg">{incorrect} špatně</span>
         </div>
     );
 }

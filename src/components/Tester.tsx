@@ -19,7 +19,7 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     const [nonce, setNonce] = useState<number>(Math.random());
     const [states, setStates] = useState<Array<QuestionState>>([]);
 
-    const {darkmode} = useContext(AppContext);
+    const { darkmode } = useContext(AppContext);
 
     const key = `key_${title.replace(/[^a-zA-Z0-9]+/, '-')}`;
 
@@ -93,29 +93,31 @@ const Tester: React.FC<TesterProps> = ({ questions, title }: TesterProps) => {
     }
 
     const answers = useMemo(() => {
-            const random = seedrandom(nonce.toString());
-            return question.answers.sort((_a, _b) => 0.5 - random());
-        }, [nonce, question.answers]
+        const random = seedrandom(nonce.toString());
+        return question.answers.sort((_a, _b) => 0.5 - random());
+    }, [nonce, question.answers]
     );
 
     return (
-        <div className={`flex flex-grow p-10 flex-row items-stretch ${darkmode ? 'bg-neutral-900' : 'bg-white'}`}>
-            <div className="w-1/2 xl:w-3/5 2xl:w-3/4">
-                <h1 className={`${darkmode ? 'text-white' : 'text-black'} font-bold text-3xl`}>{question.text}</h1>
-                <div className="flex flex-col mt-10">
+        <div className={`flex flex-col lg:flex-row flex-grow p-10 items-stretch ${darkmode ? 'bg-neutral-900' : 'bg-white'}`}>
+            <div className="w-full md:w-1/2 xl:w-3/5 2xl:w-3/4">
+                <h1 className={`${darkmode ? 'text-white' : 'text-black'} font-bold text-xl lg:text-3xl`}>{question.text}</h1>
+                <div className="flex flex-col mt-4 lg:mt-10">
                     {answers.map((answer, i) => <Answer key={i} text={answer.text} correct={answer.correct} revealed={revealed} onSelect={select} />)}
                 </div>
             </div>
-            <aside className={`${darkmode ? 'bg-neutral-800' : 'bg-gray-200'} w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-5 rounded-xl`}>
+            <aside className={`${darkmode ? 'bg-neutral-800' : 'bg-gray-200'} mt-5 lg:mt-0 w-full md:w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-0 md:ml-5 rounded-xl`}>
                 <Progress correct={correct} incorrect={incorrect} />
-                <Button disabled={!revealed} onClick={nextQuestion} className="mt-3 w-full">
-                    <FaArrowRight className="mr-5" />
-                    Další otázka
-                </Button>
-                <Button disabled={!revealed} onClick={randomQuestion} className="mt-3 w-full">
-                    <FaRandom className="mr-5" />
-                    Náhodná otázka
-                </Button>
+                <div className="flex flex-row md:flex-col">
+                    <Button disabled={!revealed} onClick={nextQuestion} className="mt-3 w-full text-center mr-5 md:mr-0">
+                        <FaArrowRight className="md:mr-5" />
+                        <div className="hidden md:block">Další otázka</div>
+                    </Button>
+                    <Button disabled={!revealed} onClick={randomQuestion} className="mt-3 w-full text-center">
+                        <FaRandom className="md:mr-5" />
+                        <div className="hidden md:block">Náhodná otázka</div>
+                    </Button>
+                </div>
                 <QuestionsOverview questions={states} selected={index} onSelect={directQuestion} />
                 <button onClick={reset} className="flex flex-row items-center justify-center text-neutral-700 uppercase tracking-widest text-sm font-bold transition hover:text-neutral-500">
                     <FaUndo className="mr-2" />

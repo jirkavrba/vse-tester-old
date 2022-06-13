@@ -48,7 +48,7 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <AppContext.Provider value={{darkmode, setDarkmode}}>
         <Header title={questionSet.title} questionsCount={questionSet.questions.length}>
-          <TesterSelection className="flex-grow" selected={questionSet} sets={sets} onSelect={select} />
+          <TesterSelection className="lg:flex-grow" selected={questionSet} sets={sets} onSelect={select} />
           <DarkModeSwitch dark={darkmode} toggle={toggleDarkMode}/>
         </Header>
         <Tester questions={questionSet.questions} title={questionSet.title} />

@@ -20,7 +20,7 @@ const Answer: React.FC<AnswerProps> = ({correct, revealed, text, onSelect}: Answ
         : (darkmode ? "bg-neutral-900 border-neutral-700 text-neutral-500" : "text-gray-400");
 
     return (
-        <button onClick={() => onSelect(correct)} className={`text-left px-10 py-8 mb-5 rounded-xl border-2 transition font-black ${revealed ? color : base}`}>
+        <button onClick={() => onSelect(correct)} className={`text-left px-6 py-4 mb-2 lg:px-10 lg:py-8 lg:mb-5 rounded-xl border-2 transition font-black ${revealed ? color : base}`}>
             {text}
         </button>
     )
