@@ -302,7 +302,7 @@
             },
             {
                 "text": "využívá silných stránek na konfrontaci s hrozbami",
-                "correct": false
+                "correct": true
             },
             {
                 "text": "se zaměřuje na využití příležitostí pomocí silných stránek k růstu",
@@ -310,7 +310,7 @@
             },
             {
                 "text": "se zaměřuje na přežití a zachování základního fungování podniku",
-                "correct": true
+                "correct": false
             }
         ]
     },
