@@ -792,7 +792,7 @@
             },
             {
                 "correct": false,
-                "text": "nerozdelený zisk"
+                "text": "nerozdělený zisk"
             }
         ]
     },
@@ -805,7 +805,7 @@
             },
             {
                 "correct": false,
-                "text": "M4 = M3 + vklady u nebank subjektu + kr CP nebankovních subjektu"
+                "text": "M4 = M3 + vklady u nebank subjektů + kr CP nebankovních subjektu"
             },
             {
                 "correct": true,
@@ -813,7 +813,7 @@
             },
             {
                 "correct": false,
-                "text": "M3 = M2 + vklady v cizí mene + repo operace"
+                "text": "M3 = M2 + vklady v cizí měně + repo operace"
             }
         ]
     },
@@ -822,49 +822,49 @@
         "answers": [
             {
                 "correct": false,
-                "text": "Lidé se stejnými charakteristikami by meli mít stejné výdaje a dane"
+                "text": "Lidé se stejnými charakteristikami by měli mít stejné výdaje a daně"
             },
             {
                 "correct": false,
-                "text": "Lidé s rozdílnými charakteristikami by meli mít stejné príjmy a výdaje"
+                "text": "Lidé s rozdílnými charakteristikami by měli mít stejné příjmy a výdaje"
             },
             {
                 "correct": true,
-                "text": "Lidé se stejnými charakteristikami by meli mít stejné príjmy a dane"
+                "text": "Lidé se stejnými charakteristikami by měli mít stejné příjmy a daně"
             },
             {
                 "correct": false,
-                "text": "Lidé s rozdílnými charakteristikami by meli mít stejné príjmy a dane"
+                "text": "Lidé s rozdílnými charakteristikami by měli mít stejné příjmy a daně"
             }
         ]
     },
     {
-        "text": "Investicní bankovnictví je typické mj. tím, že:",
+        "text": "Investiční bankovnictví je typické mj. tím, že:",
         "answers": [
             {
                 "correct": true,
-                "text": "Zdroje k financování investicní banky jsou získávány predevším na mezibankovním trhu"
+                "text": "Zdroje k financování investiční banky jsou získávány především na mezibankovním trhu"
             },
             {
                 "correct": false,
-                "text": "Investicní banky reeskontují ci eskontují cizí smenky vydávané centrální bankou"
+                "text": "Investiční banky reeskontují či eskontují cizí směnky vydávané centrální bankou"
             },
             {
                 "correct": false,
-                "text": "Investicní banky eskontují typicky vlastní smenky vydávané centrální bankou"
+                "text": "Investiční banky eskontují typicky vlastní směnky vydávané centrální bankou"
             },
             {
                 "correct": false,
-                "text": "Investicní banky reeskontují typicky vlastní dluhopisy a akcie"
+                "text": "Investiční banky reeskontují typicky vlastní dluhopisy a akcie"
             }
         ]
     },
     {
-        "text": "Jakou analogii uplatnuje teorie verejné volby (Public Choice) pri analýze v rámci politických procesu:",
+        "text": "Jakou analogii uplatňuje teorie veřejné volby (Public Choice) při analýze v rámci politických procesů:",
         "answers": [
             {
                 "correct": false,
-                "text": "analogii s príkazovým systémem"
+                "text": "analogii s příkazovým systémem"
             },
             {
                 "correct": false,
@@ -881,19 +881,19 @@
         ]
     },
     {
-        "text": "Funkce penez – co nepatrí:",
+        "text": "Funkce peněz – co nepatří:",
         "answers": [
             {
                 "correct": false,
-                "text": "zúctovací jednotka"
+                "text": "zúčtovací jednotka"
             },
             {
                 "correct": true,
-                "text": "menová jednotka"
+                "text": "měnová jednotka"
             },
             {
                 "correct": false,
-                "text": "prostredek smeny"
+                "text": "prostředek směny"
             },
             {
                 "correct": false,
@@ -902,28 +902,28 @@
         ]
     },
     {
-        "text": "Menové agregáty: TROUBLE",
+        "text": "Měnové agregáty: TROUBLE",
         "answers": [
             {
                 "correct": true,
-                "text": "Slouží jako zprostredkující kritérium penežního transmisivního mechanismu"
+                "text": "Slouží jako zprostředkující kritérium peněžního transmisivního mechanismu"
             },
             {
                 "correct": false,
-                "text": "Slouží jako operativní kritérium penežního transmisivního mechanismu"
+                "text": "Slouží jako operativní kritérium peněžního transmisivního mechanismu"
             },
             {
                 "correct": false,
-                "text": "Najdeme na strane aktiv u CB"
+                "text": "Najdeme na straně aktiv u CB"
             },
             {
                 "correct": false,
-                "text": "Najdeme na strane pasiv u CB"
+                "text": "Najdeme na straně pasiv u CB"
             }
         ]
     },
     {
-        "text": "Která z uvedených prícin muže zpusobit pasivní deficit:",
+        "text": "Která z uvedených příčin muže způsobit pasivní deficit:",
         "answers": [
             {
                 "correct": false,
@@ -952,7 +952,7 @@
         "answers": [
             {
                 "correct": true,
-                "text": "2 vrcholového volice a zároven nestandartního"
+                "text": "2 vrcholového voliče a zároveň nestandartního"
             },
             {
                 "correct": false,
@@ -960,41 +960,41 @@
             },
             {
                 "correct": false,
-                "text": "u každého volice"
+                "text": "u každého voliče"
             },
             {
                 "correct": false,
-                "text": "jen u prvovolicu"
+                "text": "jen u prvovoličů"
             }
         ]
     },
     {
-        "text": "Pojem pokladní plnení rozpoctu znamená:",
+        "text": "Pojem pokladní plnění rozpočtu znamená:",
         "answers": [
             {
                 "correct": true,
-                "text": "Realizaci príjmu a výdaju na rozpoctových úctech"
+                "text": "Realizaci příjmů a výdajů na rozpočtových účtech"
             },
             {
                 "correct": false,
-                "text": "Trídení výdaju a príjmu na odpovídajících úctech státního rozpoctu"
+                "text": "Třídení výdaju a příjmu na odpovídajících účtech státního rozpočtu"
             },
             {
                 "correct": false,
-                "text": "Plnení státního záverecného úctu"
+                "text": "Plnění státního závěřečného účtu"
             },
             {
                 "correct": false,
-                "text": "Emisní krytí deficitu státního rozpoctu"
+                "text": "Emisní krytí deficitu státního rozpočtu"
             },
             {
                 "correct": false,
-                "text": "Emisi pokladnicních poukázek"
+                "text": "Emisi pokladničních poukázek"
             }
         ]
     },
     {
-        "text": "Mezi teorie, pomocí kterých lze vysvetlit rust verejných výdaju, patrí:",
+        "text": "Mezi teorie, pomocí kterých lze vysvětlit růst veřejných výdajů, patří:",
         "answers": [
             {
                 "correct": true,
@@ -1002,7 +1002,7 @@
             },
             {
                 "correct": false,
-                "text": "Rychlejší rust produktivity ve verejném sektoru"
+                "text": "Rychlejší růst produktivity ve veřejném sektoru"
             },
             {
                 "correct": false,
@@ -1010,16 +1010,16 @@
             },
             {
                 "correct": false,
-                "text": "Rostoucí podíl poctu detí v populaci"
+                "text": "Rostoucí podíl počtu dětí v populaci"
             },
             {
                 "correct": false,
-                "text": "Stiglitzuv zákon"
+                "text": "Stiglitzův zákon"
             }
         ]
     },
     {
-        "text": "Co je to soucasná hodnota dluhopisu",
+        "text": "Co je to současná hodnota dluhopisu",
         "answers": [
             {
                 "correct": false,
@@ -1027,11 +1027,11 @@
             },
             {
                 "correct": false,
-                "text": "Cena, která je utvárená na trhu dluhopisu"
+                "text": "Cena, která je utvářená na trhu dluhopisu"
             },
             {
                 "correct": true,
-                "text": "Tržní cena, když je poptávka po dluhopisu rovná nabídce po nem"
+                "text": "Tržní cena, když je poptávka po dluhopisu rovná nabídce po něm"
             },
             {
                 "correct": false,
@@ -1040,19 +1040,19 @@
         ]
     },
     {
-        "text": "Vliv regresivního zdanení (míra zdanení se snižuje s rostoucím platem)",
+        "text": "Vliv regresivního zdanění (míra zdanění se snižuje s rostoucím platem)",
         "answers": [
             {
                 "correct": false,
-                "text": "regresivní zdanení respektuje vertikální ale ne horizontální spravedlnost"
+                "text": "regresivní zdanění respektuje vertikální ale né horizontální spravedlnost"
             },
             {
                 "correct": false,
-                "text": "lidé s vetším príjmem platí stejne jako lidé s nižším"
+                "text": "lidé s vetším príjmem platí stejně jako lidé s nižším"
             },
             {
                 "correct": true,
-                "text": "regresivní zdanení respektuje horizontální ale ne vertikální spravedlnost"
+                "text": "regresivní zdanění respektuje horizontální ale né vertikální spravedlnost"
             },
             {
                 "correct": false,
@@ -1061,7 +1061,7 @@
         ]
     },
     {
-        "text": "Definicním znakem cistých verejných statku je:",
+        "text": "Definičním znakem čistých veřejných statků je:",
         "answers": [
             {
                 "correct": false,
@@ -1073,15 +1073,15 @@
             },
             {
                 "correct": false,
-                "text": "Neekvivalentnost ve spotrebe, snadná vylucitelnost ze spotreby"
+                "text": "Neekvivalentnost ve spotřebe, snadná vylučitelnost ze spotřeby"
             },
             {
                 "correct": true,
-                "text": "Ani jedna odpoved není správná"
+                "text": "Ani jedna odpověd není správná"
             },
             {
                 "correct": false,
-                "text": "Rivalita ve spotrebe a obtížná vylécitelnost ze spotreby"
+                "text": "Rivalita ve spotřebě a obtížná vyléčitelnost ze spotřeby"
             }
         ]
     },
@@ -1094,20 +1094,20 @@
             },
             {
                 "correct": true,
-                "text": "rozdíl importu a exportu v položkách zboží, služby, duchody a nekapitálové transfery"
+                "text": "rozdíl importu a exportu v položkách zboží, služby, důchody a nekapitálové transfery"
             },
             {
                 "correct": false,
-                "text": "rozdíl importu a exportu v položkách zboží, služby a duchody"
+                "text": "rozdíl importu a exportu v položkách zboží, služby a důchody"
             },
             {
                 "correct": false,
-                "text": "rozdíl importu a exportu v položkách zboží a duchodu"
+                "text": "rozdíl importu a exportu v položkách zboží a důchodu"
             }
         ]
     },
     {
-        "text": "Co patrí pouze na stranu pasiv banky",
+        "text": "Co patří pouze na stranu pasiv banky",
         "answers": [
             {
                 "correct": false,
@@ -1128,48 +1128,48 @@
         ]
     },
     {
-        "text": "Verejný dluh",
+        "text": "Veřejný dluh",
         "answers": [
             {
                 "correct": true,
-                "text": "Je nejcasteji vykazován jako hrubý verejný dluh"
+                "text": "Je nejčasteji vykazován jako hrubý veřejný dluh"
             },
             {
                 "correct": false,
-                "text": "Není ovlivnován pomerem tempa ekonomického rustu a úrokové míry z dluhu"
+                "text": "Není ovlivňován poměrem tempa ekonomického růstu a úrokové míry z dluhu"
             },
             {
                 "correct": false,
-                "text": "Je nejcasteji vykazován jako cistý verejný dluh"
+                "text": "Je nejčastěji vykazován jako čistý veřejný dluh"
             },
             {
                 "correct": false,
-                "text": "Je casto omezován pomocí administrativního odmítnutí cástí verejného dluhu vládou"
+                "text": "Je často omezován pomocí administrativního odmítnutí částí veřejného dluhu vládou"
             },
             {
                 "correct": false,
-                "text": "Je za jinak nezmenených podmínek zvýšen zavedením mimorádné dane sloužící ke krytí verejného dluhu"
+                "text": "Je za jinak nezměněných podmínek zvýšen zavedením mimořádné daně sloužící ke krytí veřejného dluhu"
             }
         ]
     },
     {
-        "text": "Která možnost zahrnuje položky OB pouze na strane aktiv?",
+        "text": "Která možnost zahrnuje položky OB pouze na straně aktiv?",
         "answers": [
             {
                 "correct": true,
-                "text": "PMR, CP, státní pokladnicní poukázky"
+                "text": "PMR, CP, státní pokladniční poukázky"
             },
             {
                 "correct": false,
-                "text": "úvery klientu, rezervní fondy, pokladní hotovost"
+                "text": "úvery klientů, rezervní fondy, pokladní hotovost"
             },
             {
                 "correct": false,
-                "text": "CP, základní kapitál, poskytnuté úvery bankám"
+                "text": "CP, základní kapitál, poskytnuté úvěry bankám"
             },
             {
                 "correct": false,
-                "text": "CP pevne úrocené, pokladní hotovost, vklady klientu"
+                "text": "CP pevně úročené, pokladní hotovost, vklady klientů"
             }
         ]
     },
@@ -1182,11 +1182,11 @@
             },
             {
                 "correct": false,
-                "text": "Centrální banka prodává státem garantované dluhopisy komercních bank"
+                "text": "Centrální banka prodává státem garantované dluhopisy komerčních bank"
             },
             {
                 "correct": false,
-                "text": "Centrální banka kupuje státem garantované dluhopisy komercních bank"
+                "text": "Centrální banka kupuje státem garantované dluhopisy komerčních bank"
             },
             {
                 "correct": false,
@@ -1195,7 +1195,7 @@
         ]
     },
     {
-        "text": "Charakter prímých daní v CR mají:",
+        "text": "Charakter přímých daní v ČR mají:",
         "answers": [
             {
                 "correct": true,
@@ -1207,7 +1207,7 @@
             },
             {
                 "correct": true,
-                "text": "dan z nemovitosti"
+                "text": "daň z nemovitosti"
             },
             {
                 "correct": true,
@@ -1216,32 +1216,32 @@
         ]
     },
     {
-        "text": "S cím pracuje transmisní keynesiánský mechanismus:TROUBLE",
+        "text": "S čím pracuje transmisní keynesiánský mechanismus:TROUBLE",
         "answers": [
             {
                 "correct": false,
-                "text": "nástroje menové politiky -> krátkodobé úrokové sazby -> inflace -> reálný duchod"
+                "text": "nástroje měnové politiky -> krátkodobé úrokové sazby -> inflace -> reálný důchod"
             },
             {
                 "correct": false,
-                "text": "nástroje menové politiky -> inflace -> krátkodobé úrokové sazby -> dlouhodobé úrokové sazby -> reálný duchod"
+                "text": "nástroje měnové politiky -> inflace -> krátkodobé úrokové sazby -> dlouhodobé úrokové sazby -> reálný důchod"
             },
             {
                 "correct": false,
-                "text": "nástroje menové politiky -> úrokové sazby -> menové báze -> penežní zásoba -> reálný duchod"
+                "text": "nástroje měnové politiky -> úrokové sazby -> měnové báze -> peněžní zásoba -> reálný důchod"
             },
             {
                 "correct": true,
-                "text": "krátkodobé úrokové sazby -> dlouhodobé úrokové sazby -> hospodárský rust nebo kontrola nezamestnanosti"
+                "text": "krátkodobé úrokové sazby -> dlouhodobé úrokové sazby -> hospodářský růst nebo kontrola nezaměstnanosti"
             },
             {
                 "correct": false,
-                "text": "nástroje menové politiky -> krátkodobé úrokové sazby -> dlouhodobé úrokové sazby -> reálný duchod"
+                "text": "nástroje měnové politiky -> krátkodobé úrokové sazby -> dlouhodobé úrokové sazby -> reálný důchod"
             }
         ]
     },
     {
-        "text": "Vyznacte položku, kterou lze nalézt na aktivech v bilanci centrální banky",
+        "text": "Vyznačte položku, kterou lze nalézt na aktivech v bilanci centrální banky",
         "answers": [
             {
                 "correct": true,
@@ -1253,16 +1253,16 @@
             },
             {
                 "correct": false,
-                "text": "Emitované obeživo"
+                "text": "Emitované oběživo"
             },
             {
                 "correct": false,
-                "text": "Hotovostní obeživo"
+                "text": "Hotovostní oběživo"
             }
         ]
     },
     {
-        "text": "Co nepatrí do menové báze",
+        "text": "Co nepatří do měnové báze",
         "answers": [
             {
                 "correct": true,
@@ -1283,44 +1283,44 @@
         ]
     },
     {
-        "text": "Co platí o Lorenzove krivce?",
+        "text": "Co platí o Lórenzově křivce?",
         "answers": [
             {
                 "correct": false,
-                "text": "Krivka úplne rovnomerného rozdelení duchodu je napravo od krivky skutecného rozdelení"
+                "text": "Křivka úplně rovnoměrného rozdělení důchodu je napravo od křivky skutečného rozdělení"
             },
             {
                 "correct": true,
-                "text": "Progresivní zdanení posune krivku skutecného rozdelení doleva"
+                "text": "Progresivní zdanění posune křivku skutečného rozdělení doleva"
             },
             {
                 "correct": false,
-                "text": "Krivka úplne nerovnomerného rozdelení duchodu je rovnobežná s krivkou rovnomerného rozdelení"
+                "text": "Křivka úplně nerovnoměrného rozdělení důchodu je rovnobežná s křivkou rovnoměrného rozdělení"
             },
             {
                 "correct": false,
-                "text": "Progresivní zdanení posune krivku skutecného rozdelení doprava"
+                "text": "Progresivní zdanění posune křivku skutečného rozdělení doprava"
             }
         ]
     },
     {
-        "text": "Na pasivech bilance centrální banky mužeme soucasne nalézt následující položky:",
+        "text": "Na pasivech bilance centrální banky můžeme současně nalézt následující položky:",
         "answers": [
             {
                 "correct": false,
-                "text": "Povinné minimální rezervy obchodních bank, centrální bankou emitované dluhopisy a komercními bankami emitované akcie"
+                "text": "Povinné minimální rezervy obchodních bank, centrální bankou emitované dluhopisy a komerčními bankami emitované akcie"
             },
             {
                 "correct": false,
-                "text": "Obeživo (peníze v obehu), peníze v pokladne, povinné minimální rezervy, centrální bankou nakoupené akcie"
+                "text": "Obeživo (peníze v obehu), peníze v pokladně, povinné minimální rezervy, centrální bankou nakoupené akcie"
             },
             {
                 "correct": true,
-                "text": "Peníze v obehu (obeživo), centrální bankou emitované dluhopisy, základní kapitál"
+                "text": "Peníze v oběhu (obeživo), centrální bankou emitované dluhopisy, základní kapitál"
             },
             {
                 "correct": false,
-                "text": "Vlastní jmení, nakoupené pokladnicní poukázky, zlato"
+                "text": "Vlastní jmění, nakoupené pokladniční poukázky, zlato"
             }
         ]
     },
@@ -1333,20 +1333,20 @@
             },
             {
                 "correct": false,
-                "text": "snaha minimalizovat velikost vlastního rozpoctu"
+                "text": "snaha minimalizovat velikost vlastního rozpočtu"
             },
             {
                 "correct": false,
-                "text": "snaha maximalizovat užitek pro spolecnost"
+                "text": "snaha maximalizovat užitek pro společnost"
             },
             {
                 "correct": true,
-                "text": "snaha maximalizovat velikost vlastního rozpoctu"
+                "text": "snaha maximalizovat velikost vlastního rozpočtu"
             }
         ]
     },
     {
-        "text": "Dan z príjmu FO byla do roku 2008 v CR TROUBLE",
+        "text": "Daň z příjmu FO byla do roku 2008 v ČR TROUBLE",
         "answers": [
             {
                 "correct": false,
@@ -1358,11 +1358,11 @@
             },
             {
                 "correct": false,
-                "text": "stupnovitá"
+                "text": "stupňovitá"
             },
             {
                 "correct": true,
-                "text": "klouzave progresivní"
+                "text": "klouzavá progresivní"
             }
         ]
     },
@@ -1371,24 +1371,24 @@
         "answers": [
             {
                 "correct": false,
-                "text": "Nákup cenných papíru centrální bankou od bank za jinak nezmenených podmínek snižuje rezervy bank a menovou bázi"
+                "text": "Nákup cenných papíru centrální bankou od bank za jinak nezměněných podmínek snižuje rezervy bank a měnovou bázi"
             },
             {
                 "correct": false,
-                "text": "Je-li hlavní cílem presná zmena menové báze, centrální banka predem stanoví úrokové sazby, resp. ceny cenných papíru"
+                "text": "Je-li hlavním cílem přesná změna měnové báze, centrální banka předem stanoví úrokové sazby, resp. ceny cenných papírů"
             },
             {
                 "correct": true,
-                "text": "Pri prostých repo operacích centrální banka nejprve cenné papíry prodává s tím, že je po urcité dobe zpetne koupí"
+                "text": "Při prostých repo operacích centrální banka nejprve cenné papíry prodává s tím, že je po určité době zpětne koupí"
             },
             {
                 "correct": false,
-                "text": "Provádejí se vždy bezhotovostne a prevážne s majetkovými cennými papíry"
+                "text": "Provádějí se vždy bezhotovostně a převážně s majetkovými cennými papíry"
             }
         ]
     },
     {
-        "text": "Muže být menová báze vypujcená?",
+        "text": "Může být měnová báze vypůjčená?",
         "answers": [
             {
                 "correct": false,
@@ -1400,16 +1400,16 @@
             },
             {
                 "correct": true,
-                "text": "ano muže"
+                "text": "ano může"
             },
             {
                 "correct": false,
-                "text": "vždy je vypujcená"
+                "text": "vždy je vypůjčená"
             }
         ]
     },
     {
-        "text": "Vypocítejte, jak se zmení MB když: CB nakoupila zahranicní menu za 1,9 mld Kc Splatila smenné pokladnicní poukázky za 2,5 mld Kc Nakoupila od KB cenné papíry v hodnote 4,5 mld Kc Prodala zahranicní menu v hodnote 4,4 mld Kc",
+        "text": "Vypočítejte, jak se změní MB když: CB nakoupila zahraniční měnu za 1,9 mld Kč Splatila směnné pokladniční poukázky za 2,5 mld Kc Nakoupila od KB cenné papíry v hodnote 4,5 mld Kč Prodala zahraniční měnu v hodnotě 4,4 mld Kc",
         "answers": [
             {
                 "correct": false,
@@ -1434,15 +1434,15 @@
         "answers": [
             {
                 "correct": false,
-                "text": "Efekty a náklady musí být vyjádreny v penežních jednotkách"
+                "text": "Efekty a náklady musí být vyjádřeny v peněžních jednotkách"
             },
             {
                 "correct": false,
-                "text": "Efekty a náklady jsou vyjádreny pouze v nepenežních jednotkách (napr. v kusech, tunách apod.)"
+                "text": "Efekty a náklady jsou vyjádřeny pouze v nepenežních jednotkách (např. v kusech, tunách apod.)"
             },
             {
                 "correct": false,
-                "text": "Efekty (výstupy) musí být v penezích, náklady jsou v naturálních jednotkách"
+                "text": "Efekty (výstupy) musí být v penězích, náklady jsou v naturálních jednotkách"
             },
             {
                 "correct": false,
@@ -1450,7 +1450,7 @@
             },
             {
                 "correct": true,
-                "text": "Náklady musí být v penezích, ale výstupy (efekty) jsou v naturálních jednotkách"
+                "text": "Náklady musí být v penězích, ale výstupy (efekty) jsou v naturálních jednotkách"
             }
         ]
     },
@@ -1459,11 +1459,11 @@
         "answers": [
             {
                 "correct": true,
-                "text": "jedná svým jménem a na úcet klienta"
+                "text": "jedná svým jménem a na účet klienta"
             },
             {
                 "correct": false,
-                "text": "jedná jménem a na úcet klienta"
+                "text": "jedná jménem a na účet klienta"
             },
             {
                 "correct": false,
@@ -1471,7 +1471,7 @@
             },
             {
                 "correct": false,
-                "text": "jedná svým jménem a na vlastní úcet"
+                "text": "jedná svým jménem a na vlastní účet"
             }
         ]
     },
@@ -1488,24 +1488,24 @@
             },
             {
                 "correct": false,
-                "text": "zvýší duchod"
+                "text": "zvýší důchod"
             },
             {
                 "correct": false,
-                "text": "sníží transakcní rychlost penez"
+                "text": "sníží transakční rychlost peněz"
             }
         ]
     },
     {
-        "text": "Diskrecní nástroj – co to je",
+        "text": "Diskreční nástroj – co to je",
         "answers": [
             {
                 "correct": false,
-                "text": "Lineární dan"
+                "text": "Lineární daň"
             },
             {
                 "correct": false,
-                "text": "Progresivní dan"
+                "text": "Progresivní daň"
             },
             {
                 "correct": false,
@@ -1513,53 +1513,53 @@
             },
             {
                 "correct": true,
-                "text": "Jednorázová povodnová dan"
+                "text": "Jednorázová povodňová daň"
             }
         ]
     },
     {
-        "text": "V CR se vyplácí ze státního (verejného) duchodového pojištení mimo jiné následující druhy duchodu: TROUBLE",
+        "text": "V ČR se vyplácí ze státního (veřejného) důchodového pojištění mimo jiné následující druhy důchodu: TROUBLE",
         "answers": [
             {
                 "correct": true,
-                "text": "Invalidní duchody"
+                "text": "Invalidní důchody"
             },
             {
                 "correct": false,
-                "text": "Duchody v nezamestnanosti"
+                "text": "Důchody v nezaměstnanosti"
             },
             {
                 "correct": false,
-                "text": "Nemocenské duchody"
+                "text": "Nemocenské důchody"
             },
             {
                 "correct": false,
-                "text": "Ani jedna odpoved není správná"
+                "text": "Ani jedna odpověď není správná"
             },
             {
                 "correct": false,
-                "text": "Duchody zdravotním pojištencum ke krytí zdravotních nákladu"
+                "text": "Důchody zdravotním pojištencům ke krytí zdravotních nákladu"
             }
         ]
     },
     {
-        "text": "Tzv. základ dane je vlastne modifikovaným predmetem zdanení. K modifikaci predmetu zdanení lze uplatnit následující postupy:",
+        "text": "Tzv. základ daně je vlastně modifikovaným predmětem zdanění. K modifikaci predmětu zdanění lze uplatnit následující postupy:",
         "answers": [
             {
                 "correct": false,
-                "text": "odectení danové sazby"
+                "text": "odečtení daňové sazby"
             },
             {
                 "correct": true,
-                "text": "zúžení predmetu zdanení (vynetím urcitých cinností nebo osvobozením od zdanení)"
+                "text": "zúžení predmětu zdanění (vynětím určitých činností nebo osvobozením od zdanění)"
             },
             {
                 "correct": false,
-                "text": "kvantifikací danového základu"
+                "text": "kvantifikací daňového základu"
             },
             {
                 "correct": false,
-                "text": "násobení danovou sazbou"
+                "text": "násobení daňovou sazbou"
             }
         ]
     },
@@ -1568,45 +1568,45 @@
         "answers": [
             {
                 "correct": false,
-                "text": "Nástroj menové politiky CNB používaný pro rízení reeskontu smenek"
+                "text": "Nástroj měnové politiky ČNB používaný pro řízení reeskontu směnek"
             },
             {
                 "correct": true,
-                "text": "Úroková sazba používaná bankami pri poskytování lombardních úveru"
+                "text": "Úroková sazba používaná bankami při poskytování lombardních úvěrů"
             },
             {
                 "correct": false,
-                "text": "Bankovní úver poskytovaný typicky proti zástave veci movité"
+                "text": "Bankovní úvěr poskytovaný typicky proti zástavě věci movité"
             },
             {
                 "correct": false,
-                "text": "Nástroj menové politiky CNB používaný pro rízení eskontu smenek"
+                "text": "Nástroj měnové politiky ČNB používaný pro řízení eskontu směnek"
             }
         ]
     },
     {
-        "text": "K efektivnímu zabezpecování verejných statku dochází:",
+        "text": "K efektivnímu zabezpečování veřejných statků dochází:",
         "answers": [
             {
                 "correct": false,
-                "text": "když jsou zohledneny všechny reálné náklady produkce soukromých statku"
+                "text": "když jsou zohledněny všechny reálné náklady produkce soukromých statků"
             },
             {
                 "correct": true,
-                "text": "když jsou zohledneny všechny mezní náklady produkce verejných statku"
+                "text": "když jsou zohledněny všechny mezní náklady produkce veřejných statků"
             },
             {
                 "correct": false,
-                "text": "když jsou zohledneny všechny reálné náklady produkce verejných statku"
+                "text": "když jsou zohledněny všechny reálné náklady produkce veřejných statků"
             },
             {
                 "correct": false,
-                "text": "když jsou zohledneny všechny mezní náklady produkce soukromých statku"
+                "text": "když jsou zohledněny všechny mezní náklady produkce soukromých statků"
             }
         ]
     },
     {
-        "text": "Mezi charakteristiky daní patrí:",
+        "text": "Mezi charakteristiky daní patří:",
         "answers": [
             {
                 "correct": true,
@@ -1618,7 +1618,7 @@
             },
             {
                 "correct": true,
-                "text": "neúcelovost"
+                "text": "neúčelovost"
             },
             {
                 "correct": true,
@@ -1627,7 +1627,7 @@
         ]
     },
     {
-        "text": "Co patrí mezi sdílené dane",
+        "text": "Co patří mezi sdílené daňe",
         "answers": [
             {
                 "correct": false,
@@ -1635,7 +1635,7 @@
             },
             {
                 "correct": false,
-                "text": "silnicní dan"
+                "text": "silniční dan"
             },
             {
                 "correct": true,
@@ -1643,24 +1643,24 @@
             },
             {
                 "correct": false,
-                "text": "dan z nemovitosti"
+                "text": "daň z nemovitosti"
             }
         ]
     },
     {
-        "text": "Podle Keynesovy teorie determinace úrokové míry (teorie preference likvidity) je rust úrokové míry zpusoben:",
+        "text": "Podle Keynesovy teorie determinace úrokové míry (teorie preference likvidity) je růst úrokové míry způsoben:",
         "answers": [
             {
                 "correct": true,
-                "text": "poklesem nabídky penez"
+                "text": "poklesem nabídky peněz"
             },
             {
                 "correct": false,
-                "text": "poklesem duchodu, který vede k poklesu úspor"
+                "text": "poklesem důchodu, který vede k poklesu úspor"
             },
             {
                 "correct": false,
-                "text": "rustem cenové hladiny"
+                "text": "růstem cenové hladiny"
             },
             {
                 "correct": false,
@@ -1677,7 +1677,7 @@
             },
             {
                 "correct": false,
-                "text": "repo sazba (dl úrok sazba) je užívána jako zprostredkovatelské kritérium"
+                "text": "repo sazba (dl úrok sazba) je užívána jako zprostředkovatelské kritérium"
             },
             {
                 "correct": true,
@@ -1685,16 +1685,16 @@
             },
             {
                 "correct": false,
-                "text": "repo sazba (kr úrok sazba) je užívána jako zprostredkovatelské kritérium"
+                "text": "repo sazba (kr úrok sazba) je užívána jako zprostředkovatelské kritérium"
             }
         ]
     },
     {
-        "text": "V souvislosti s poptávkou po investicních instrumentech platí, že:",
+        "text": "V souvislosti s poptávkou po investičních instrumentech platí, že:",
         "answers": [
             {
                 "correct": false,
-                "text": "Výnosové míry investicních instrumentu vykazují velké kolísání predevším v dlouhém období"
+                "text": "Výnosové míry investičních instrumentů vykazují velké kolísání predevším v dlouhém období"
             },
             {
                 "correct": false,
@@ -1702,32 +1702,32 @@
             },
             {
                 "correct": false,
-                "text": "Ve velké vetšine investicních situací je výnos zarucen"
+                "text": "Ve velké vetšině investičních situací je výnos zaručen"
             },
             {
                 "correct": true,
-                "text": "Kapitálové zisky, popr. kapitálové ztráty jsou rozdílem mezi cenou investicního instrumentu a cenou, za kterou muže být instrument prodán, nebo prodán byl."
+                "text": "Kapitálové zisky, popr. kapitálové ztráty jsou rozdílem mezi cenou investičního instrumentu a cenou, za kterou muže být instrument prodán, nebo prodán byl."
             }
         ]
     },
     {
-        "text": "Pro Fisherovou rovnici smeny platí (duchodovou rovnici smeny)",
+        "text": "Pro Fisherovou rovnici směny platí (důchodovou rovnici směny)",
         "answers": [
             {
                 "correct": true,
-                "text": "Zvýšení nabídky penez neovlivní velikost reálných transakcí."
+                "text": "Zvýšení nabídky peněz neovlivní velikost reálných transakcí."
             },
             {
                 "correct": false,
-                "text": "Snížení nabídky penez neovlivní množství obeživa v ekonomice."
+                "text": "Snížení nabídky peněz neovlivní množství obeživa v ekonomice."
             },
             {
                 "correct": false,
-                "text": "Zvýšení nabídky penez ovlivní velikost reálných transakcí."
+                "text": "Zvýšení nabídky peněz ovlivní velikost reálných transakcí."
             },
             {
                 "correct": false,
-                "text": "Snížení nabídky penez ovlivní velikost reálných transakcí."
+                "text": "Snížení nabídky peněz ovlivní velikost reálných transakcí."
             }
         ]
     },
