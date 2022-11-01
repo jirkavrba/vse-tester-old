@@ -17,7 +17,7 @@ const sets: Array<QuestionSet> = [
         title: "IT Governance",
         subject: "4SA310",
         questions: questions4sa310,
-        multichoice: false
+        multichoice: true
     },
     {
         title: "Statistika pro informatiky",
