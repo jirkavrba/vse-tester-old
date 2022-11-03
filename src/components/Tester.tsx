@@ -147,7 +147,7 @@ const Tester: React.FC<TesterProps> = ({ questions, multichoice, title }: Tester
                 </div>
             </div>
             <aside className={`${darkmode ? 'bg-neutral-800' : 'bg-gray-200'} mt-5 lg:mt-0 w-full md:w-1/2 xl:w-2/5 2xl:w-1/4 flex flex-col p-5 ml-0 md:ml-5 rounded-xl`}>
-                <Progress correct={correct} incorrect={incorrect} />
+                <Progress correct={correct} incorrect={incorrect} total={states.length}/>
                 <div className="flex-col">
                     {multichoice &&
                         <Button disabled={selected.length === 0} onClick={checkAnswers} className="mt-3 w-full text-center mr-5 md:mr-0">
