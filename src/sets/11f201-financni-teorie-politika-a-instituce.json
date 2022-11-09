@@ -302,6 +302,31 @@
         ]
     },
     {
+        "text": "Reálná úroková míra je:",
+        "answers": [
+            {
+                "correct": false,
+                "text": "Podíl úroku a zapůjčené částky"
+            },
+            {
+                "correct": false,
+                "text": "Úroková sazba - míra inflace minulého období"
+            },
+            {
+                "correct": false,
+                "text": "Reálná úroková míra + očekávaná míra inflace"
+            },
+            {
+                "correct": true,
+                "text": "Nominální úroková míra snížená o očekávanou míru inface"
+            },
+            {
+                "correct": false,
+                "text": "Rozdím mezi navrácenou a zapůjčenou částkou"
+            }
+        ]
+    },
+    {
         "text": "Veřejný dluh:",
         "answers": [
             {
@@ -319,6 +344,31 @@
             {
                 "correct": false,
                 "text": "emitují se dluhopisy"
+            }
+        ]
+    },
+    {
+        "text": "Do aktiv obchodní banky patří:",
+        "answers": [
+            {
+                "correct": true,
+                "text": "akciový kapitál"
+            },
+            {
+                "correct": false,
+                "text": "cenné papíry ve správě"
+            },
+            {
+                "correct": false,
+                "text": "termínovaný podřízený dluh"
+            },
+            {
+                "correct": false,
+                "text": "vklady u centrální banky"
+            },
+            {
+                "correct": false,
+                "text": "vlastní dluhopisy"
             }
         ]
     },
@@ -407,6 +457,31 @@
         ]
     },
     {
+        "text": "Výnosem dluhopisu je",
+        "answers": [
+            {
+                "correct": true,
+                "text": "úrok, který nezávisí na výsledku hospodaření emitenta"
+            },
+            {
+                "correct": false,
+                "text": "dividenda, která závisí na výsledku hospodaření emitenta"
+            },
+            {
+                "correct": false,
+                "text": "dividenda u firemních dluhopisů a úroková sazba u bankovních dluhopisů"
+            },
+            {
+                "correct": false,
+                "text": "dividenda, která nezávisí na výsledku hospodaření emitenta"
+            },
+            {
+                "correct": false,
+                "text": "úroková sazba, která nezávisí na výsledku hospodaření emitenta"
+            }
+        ]
+    },
+    {
         "text": "Inflace:",
         "answers": [
             {
@@ -445,6 +520,31 @@
             {
                 "correct": false,
                 "text": "ekvivalentní a návratné platby;"
+            }
+        ]
+    },
+    {
+        "text": "Cílování inflace představuje takový postup v měnové politice, kdy centrální banka ve snaze dosáhnout kvantifikované inflace",
+        "answers": [
+            {
+                "correct": false,
+                "text": "reguluje peněžní zásobu prostřednictvím měnové báze i krátkodobé úrokové míry"
+            },
+            {
+                "correct": false,
+                "text": "stanoví bankám limity na úvěry nebankovním klientům"
+            },
+            {
+                "correct": true,
+                "text": "reguluje krátkodobou úrokovou míru"
+            },
+            {
+                "correct": false,
+                "text": "prostřednictvím měnové báze reguluje peněžní zásobu (vybraný měnový agregát)"
+            },
+            {
+                "correct": false,
+                "text": "intervenuje pohyblivý měnový kurs"
             }
         ]
     },
@@ -3428,6 +3528,106 @@
         ]
     },
     {
+        "text": "Dlouhá devizová pozice je bilanční stav, kdy",
+        "answers": [
+            {
+                "correct": false,
+                "text": "devizová pasiva jsou větší než devizová aktiva - spekulujeme na depreciaci domácí měny "
+            },
+            {
+                "correct": false,
+                "text": "devizová aktiva jsou menší než devizová pasiva - spekulujeme na depreciaci cizí měny"
+            },
+            {
+                "correct": false,
+                "text": "devizová pasiva jsou větší než devizová aktiva - spekulujeme na apreciaci domácí měny"
+            },
+            {
+                "correct": false,
+                "text": "devizová aktiva jsou větší než devizová pasiva - spekulujeme na depreciaci cizí měny"
+            },
+            {
+                "correct": true,
+                "text": "devizová pasiva jsou menší než devizová aktiva - spekulujeme na apreciaci cizí měny"
+            }
+        ]
+    },
+    {
+        "text": "Co je charakteristické pro dluhopis s pohyblivým výnosem?",
+        "answers": [
+            {
+                "correct": false,
+                "text": "s růstem úrokové míry roste jmenovitá hodnota a současně i tržní cena"
+            },
+            {
+                "correct": true,
+                "text": "výnos tohoto dluhopisu odráží pohyb tržní úrokové míry"
+            },
+            {
+                "correct": false,
+                "text": "jeho tržní cena roste s růstem tržní úrokové míry"
+            },
+            {
+                "correct": false,
+                "text": "jeho jmenovitá hodnota klesá s růstem tržní úrokové míry"
+            },
+            {
+                "correct": false,
+                "text": "jeho tržní cena klesá s růstem tržní úrokové míry"
+            }
+        ]
+    },
+    {
+        "text": "Mezi základní součásti systému bankovní regulace patří",
+        "answers": [
+            {
+                "correct": false,
+                "text": "devizová směnitelnost"
+            },
+            {
+                "correct": false,
+                "text": "limitování vnitřních úvěrů tempem ekonomického růstu"
+            },
+            {
+                "correct": false,
+                "text": "operace na volném trhu"
+            },
+            {
+                "correct": false,
+                "text": "měnová politika"
+            },
+            {
+                "correct": true,
+                "text": "pomoc věřitele poslední instance"
+            }
+        ]
+    },
+    {
+        "text": "Peníze v součastnosti emitují",
+        "answers": [
+            {
+                "correct": false,
+                "text": "centrální banka i obchodní banky do ekonomiky"
+            },
+            {
+                "correct": true,
+                "text": "centrální banka do bankovního systému a obchodní banky do ekonomiky"
+            },
+            {
+                "correct": false,
+                "text": "výhradně obchodní banky, a to do ekonomiky i bankovního systému"
+            },
+            {
+                "correct": false,
+                "text": "centrální banka i obchodní banky do bankovního systému"
+            },
+            {
+                "correct": false,
+                "text": "centrální banka do ekonomiky a obchodní banky do bankovního systému"
+            }
+        ]
+    },
+    {
         "text": "Centralizace (tzn. z úrovně státního rozpočtu) stabilizační fiskální funkce:",
         "answers": [
             {
@@ -3449,6 +3649,31 @@
             {
                 "correct": false,
                 "text": "je neefektivní, neboť probly typu hospodárský růst, nezaměstnanost apod. jsou lépe řešitelné na nižší než ústřední úrovni"
+            }
+        ]
+    },
+    {
+        "text": "Součástí žádosti o přidělení bankovní licence nejsou",
+        "answers": [
+            {
+                "correct": false,
+                "text": "kvalifikační předpoklady osob navrhovaných do statutárních orgánů banky"
+            },
+            {
+                "correct": false,
+                "text": "prokázání původu kapitálu"
+            },
+            {
+                "correct": false,
+                "text": "záměry při rozvíjení jednotlivých bankovních činností"
+            },
+            {
+                "correct": true,
+                "text": "hlášení o devizové pozici"
+            },
+            {
+                "correct": false,
+                "text": "minimální výše kapitálu"
             }
         ]
     },
